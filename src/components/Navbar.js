@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
-import { Badge, ShoppingCart, ShoppingCartOutlined } from "@mui/icons-material";
+import Badge from "@mui/material/Badge";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const Container = styled.div`
   /* height: 60px; */
   background-color: white;
+  color: #0b0742;
 `;
 
 const Wrapper = styled.div`
@@ -21,6 +23,7 @@ const Left = styled.h3`
 `;
 const Logo = styled.h1`
   font-weight: bold;
+  color: #0b0742;
 `;
 const Dot = styled.span`
   color: rgb(13, 13, 61);
@@ -55,6 +58,7 @@ const SearchContainer = styled.div`
 const Input = styled.input`
   border: none;
   width: 100%;
+  outline: none;
 `;
 
 const MenuItem = styled.div`
@@ -88,9 +92,8 @@ const Navbar = () => {
           <MenuItem>Account</MenuItem>
           <MenuItem>Help</MenuItem>
           <MenuItem>
-            <Badge color="secondary" badgeContent={0} showZero>
-              <ShoppingCart />
-            </Badge>
+            <Badge badgeContent={4} color="success"></Badge>
+            <ShoppingCartOutlinedIcon />
           </MenuItem>
         </Right>
       </Wrapper>
