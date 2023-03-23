@@ -13,6 +13,7 @@ const Container = styled.div`
   overflow: hidden;
   font-family: "Work Sans", sans-serif;
   color: #0b0742;
+  background-color: white;
 `;
 
 const Arrow = styled.div`
@@ -91,9 +92,6 @@ const Slider = () => {
 
   return (
     <Container>
-      <Arrow direction="left" onClick={() => handleClick("left")}>
-        <ArrowBackIosNewOutlinedIcon style={{ fontSize: "30px" }} />
-      </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((sliderItem) => (
           <Slide bg="slide1">
@@ -108,6 +106,9 @@ const Slider = () => {
           </Slide>
         ))}
       </Wrapper>
+      <Arrow direction="left" onClick={() => handleClick("left")}>
+        <ArrowBackIosNewOutlinedIcon style={{ fontSize: "30px" }} />
+      </Arrow>
       <Arrow direction="right" onClick={() => handleClick("right")}>
         <ArrowForwardIosOutlinedIcon style={{ fontSize: "30px" }} />
       </Arrow>
