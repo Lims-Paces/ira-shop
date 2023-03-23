@@ -9,13 +9,13 @@ export const sliderItems = [
   },
   {
     id: 1,
-    image: "/download.jpg",
+    image: duveh,
     title: "DUVET DEALS",
     desc: "LET YOUR LINGERIES LINGER! 20% OFF FOR NEw ARRIVALS.",
   },
   {
     id: 1,
-    image: "/download.jpg",
+    image: duveh,
     alt: "lingeries",
     title: "WHOLESALE DEALS",
     desc: "LET YOUR LINGERIES LINGER! 20% OFF FOR NEw ARRIVALS.",

@@ -19,13 +19,18 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: row;
   font-size: 13px;
 `;
+
 const Logo = styled.h1`
   font-weight: bold;
   color: #0b0742;
+  font-family: "Work Sans", sans-serif;
 `;
-const Dot = styled.span`
+const Dot = styled.div`
+  margin-top: -30px;
   color: rgb(13, 13, 61);
 `;
 const Right = styled.div`
@@ -78,7 +83,21 @@ const Navbar = () => {
       <Wrapper>
         <Left>
           <Logo>
-            IRA <Dot>.</Dot>
+            IRA
+            <Dot>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </Dot>
           </Logo>
         </Left>
         <Center>

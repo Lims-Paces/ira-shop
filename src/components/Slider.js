@@ -10,9 +10,9 @@ const Container = styled.div`
   height: 100vh;
   display: flex;
   position: relative;
-  /* background-color: #e3e6e6; */
   overflow: hidden;
-  /* opacity: 0.9; */
+  font-family: "Work Sans", sans-serif;
+  color: #0b0742;
 `;
 
 const Arrow = styled.div`
@@ -35,7 +35,8 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
   height: 100%;
   display: flex;
-  transform: translateX(0vw);
+  transition: all 1.5s ease;
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
@@ -80,14 +81,20 @@ const Button = styled.button`
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
-  const handleClick = () => {};
+  const handleClick = (direction) => {
+    if (direction === "left") {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    } else {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+    }
+  };
 
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowBackIosNewOutlinedIcon style={{ fontSize: "30px" }} />
       </Arrow>
-      <Wrapper>
+      <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((sliderItem) => (
           <Slide bg="slide1">
             <ImgContainer>
