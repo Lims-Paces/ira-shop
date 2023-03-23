@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Left = styled.h3`
+const Left = styled.div`
   flex: 1;
   font-size: 13px;
 `;
