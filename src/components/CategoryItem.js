@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  color: black;
   background-color: white;
   /* flex: 1; */
   margin: 10px;

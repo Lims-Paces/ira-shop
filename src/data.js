@@ -10,13 +10,13 @@ export const sliderItems = [
     desc: "LET YOUR LINGERIES LINGER! 20% OFF FOR NEw ARRIVALS.",
   },
   {
-    id: 1,
+    id: 2,
     image: linger,
     title: "LINGERIES DEALS",
     desc: "LET YOUR LINGERIES LINGER! 20% OFF FOR NEw ARRIVALS.",
   },
   {
-    id: 1,
+    id: 3,
     image: thrift,
     alt: "thrift",
     title: "THRIFT DEALS",
@@ -31,57 +31,57 @@ export const categories = [
     title: "Thrifts",
   },
   {
-    id: 1,
+    id: 2,
     img: thrift,
     title: "Male underwears",
   },
   {
-    id: 1,
+    id: 3,
     img: thrift,
     title: "Female underwears",
   },
   {
-    id: 1,
+    id: 4,
     img: thrift,
     title: "Duvet",
   },
 ];
 
-export const product = [
+export const popularProducts = [
   {
     id: 1,
     img: thrift,
   },
   {
-    id: 1,
+    id: 2,
     img: thrift,
   },
   {
-    id: 1,
+    id: 3,
     img: thrift,
   },
   {
-    id: 1,
+    id: 4,
     img: thrift,
   },
   {
-    id: 1,
+    id: 5,
     img: thrift,
   },
   {
-    id: 1,
+    id: 6,
     img: thrift,
   },
   {
-    id: 1,
+    id: 7,
     img: thrift,
   },
   {
-    id: 1,
+    id: 8,
     img: thrift,
   },
   {
-    id: 1,
+    id: 9,
     img: thrift,
   },
 ];
