@@ -10,8 +10,9 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
+  font-family: "Work Sans", sans-serif;
   font-size: 70px;
-  margin-bottom: 0;
+  margin: 0;
 `;
 
 const Description = styled.p`
@@ -48,7 +49,7 @@ const Newsletter = () => {
     <Container>
       <Title>Join IRA Newsletter</Title>
       <Description>
-        Stay connected to know when new arrivals and fresh deals come.
+        Stay connected to know when new arrivals and fresh deals come
       </Description>
       <InputContainer>
         <Input placeholder="Your email" />
