@@ -7,7 +7,7 @@ const Container = styled.div`
   background-color: white;
   height: 45vh;
   padding: 5px 20px;
-  margin: 0 30px 50px 30px;
+  margin: 0 30px 30px 30px;
 `;
 
 const Wrapper = styled.div`

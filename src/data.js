@@ -1,6 +1,5 @@
 import linger from "../src/images/linger.png";
 import thrift from "../src/images/thrift.jpg";
-import category1 from "../src/images/category1.jpg";
 
 export const sliderItems = [
   {
@@ -82,6 +81,49 @@ export const popularProducts = [
   },
   {
     id: 9,
+    img: thrift,
+  },
+];
+
+export const allProducts = [
+  {
+    id: 1,
+    img: thrift,
+  },
+  {
+    id: 2,
+    img: thrift,
+  },
+  {
+    id: 3,
+    img: thrift,
+  },
+  {
+    id: 4,
+    img: thrift,
+  },
+  {
+    id: 5,
+    img: thrift,
+  },
+  {
+    id: 6,
+    img: thrift,
+  },
+  {
+    id: 7,
+    img: thrift,
+  },
+  {
+    id: 8,
+    img: thrift,
+  },
+  {
+    id: 9,
+    img: thrift,
+  },
+  {
+    id: 10,
     img: thrift,
   },
 ];
